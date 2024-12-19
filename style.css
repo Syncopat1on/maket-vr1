@@ -1,0 +1,206 @@
+
+@font-face {
+  font-family:"TT Lakes";
+  font-style:normal;
+  font-weight:400;
+  src:local("TT Lakes"),  url("/fonts/TTLakes-Bold.woff");
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: TT Lakes;
+  margin:0;
+}
+            /*Начало шапки*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+}
+.nav_menu__group-conteiner_1 {
+  display: flex;
+  column-gap:20px;
+  padding:24px;
+  padding-right: 0;
+  align-items: center;
+}
+.nav-menu__group-container_2 {
+  display: flex;
+  column-gap:16px;
+  padding:24px;
+}
+           /*Конец  шапки*/
+           /*Начало заголовка */
+.hr_1 {
+  height: 40px;
+}
+.title-container {
+  display: flex;
+  flex-direction: start;
+  column-gap:18px;
+}
+.title-container__text {
+  font-size: 28px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title-adition__bid, 
+.title-adition__status {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.title-adition__bid-text,
+.title-adition__status-text {
+  padding-right: 9px;
+  
+}
+.title-adition__bid-a,
+.title-adition__status-a {
+  text-decoration: none;
+  color:black;
+  font-weight: 500;
+}
+.title-adition {
+  display: flex;
+  column-gap:32px;
+  padding-right: 32px;
+}
+.title-adition {
+  display: none;
+  padding-top: 10px;
+}
+          /*Конец заголовка*/
+          /*Начало навигационного меню*/
+
+.nav__group a , li {
+  text-decoration: none;
+  color:black;
+  list-style-type: none;
+  white-space: nowrap;
+}
+.nav__group {
+  display:flex;
+  flex-wrap: nowrap;
+  padding-right: 22px;
+  padding-left:22px;
+  margin: 0;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.nav__group-items {
+  display: inline;
+  padding-top:8px;
+  padding-bottom: 8px;
+  padding-right: 21px;
+  padding-left: 21px;
+}
+.nav__group-items,  a:hover {
+  color:  rgb(80, 76, 76);
+}
+.nav__group-items a:focus {
+  outline: none; 
+  background-color: white; 
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  padding-left:12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+          /* Для имитации того, что только один элемент выбран */
+.nav__group-items  a:focus-visible {
+  border: 2px solid  #B8FFEC;
+  padding: 8px 15px;
+}
+
+          /*Конец навигационного меню*/
+          /*Основной фон*/
+.backgruound { 
+  padding-bottom: 35px;
+  background:#F8F8F8;
+}   
+          /*Основное содержание*/  
+   
+.read_more,
+.read_more__a {
+  font-weight: 600;
+  text-decoration: none;
+  color:black;
+  font-size: 16px;
+}
+.text-main__more {
+  display: flex;
+  column-gap:8px;
+}
+.text_title {
+  display:flex;
+  flex-wrap: nowrap;
+  column-gap: 36px;
+  padding-top: 24px;
+}
+.text-main__items {
+  margin: 0;
+  font-size: 14px;
+}
+.text_2 {
+  padding-top:15px;
+}
+.text_title__container {
+  min-width: 288px;
+  max-width: 490px;
+  padding-left:24px;
+  width: 45%;
+  
+}
+.text_img {
+  border-radius: 10px;
+  width: 100%;
+}
+@media only screen and (min-width: 1120px) {
+  header { 
+  display: none;
+ }
+ .title-adition { 
+  display: flex;
+}
+}
+@media only screen and (max-width: 320px) { 
+   .hd, .hr_1 {
+    display: none;
+  }
+  .text_2 {
+    display: none;
+  }
+  
+  .text_img {
+    border-radius: 0px;
+  }
+ 
+}
+@media only screen and (max-width: 768px) { 
+  .text_3 {
+   display: none;
+ }
+ .text_main-img {
+  width: 360px;
+  height: 208px;
+  
+ }
+ .text_title__container {
+  width: 45%;
+
+ }
+}
+@media only screen and (max-width: 680px) {
+  .text_title {
+    flex-wrap: wrap;
+  }
+}
+/*1057  и 769*/
